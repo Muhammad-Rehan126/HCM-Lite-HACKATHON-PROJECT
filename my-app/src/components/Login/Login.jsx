@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
 export default function Login() {
-  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('login'); // 'login' or 'create'
 
   // Login Form States
@@ -47,7 +45,7 @@ export default function Login() {
         message: 'Welcome back. Your HCM workspace is ready.',
       });
       window.setTimeout(() => {
-        navigate('/dashboard', { replace: true });
+        window.location.assign('/dashboard');
       }, 1250);
     } else {
       setFeedback({
