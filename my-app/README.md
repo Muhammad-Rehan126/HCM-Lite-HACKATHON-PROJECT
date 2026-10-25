@@ -41,8 +41,8 @@ settings:
 - Install command: `npm install`
 
 The `vercel.json` rewrite sends `/dashboard` back to the React entry page so
-direct links and browser refreshes work. The dashboard HTML remains available
-at `/hcm-lite.html`.
+direct links and browser refreshes work. The dashboard markup and scripts are
+embedded in `src/components/Login/HCM lite/hcm lite.jsx`.
 
 ### `npm run eject`
 
