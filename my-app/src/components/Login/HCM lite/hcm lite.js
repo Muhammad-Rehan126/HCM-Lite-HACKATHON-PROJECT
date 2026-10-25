@@ -1032,7 +1032,7 @@ const dashboardHtml = [
   "                status.textContent = `Attendance recorded at ${current.time}${current.method === 'camera' ? ' with a camera check-in' : ''}.`;",
   "                status.className = 'mb-3 text-xs font-semibold text-green-600 dark:text-green-400';",
   "                button.disabled = true;",
-  "                button.innerHTML = '<i class=\"fa-solid fa-camera mr-2\" aria-hidden=\"true\"></i>Attendance recorded';",
+  "                button.textContent = 'Attendance recorded';",
   "                button.className = 'cursor-not-allowed rounded-xl bg-gray-100 px-4 py-2 text-sm font-medium text-gray-500 dark:bg-gray-700 dark:text-gray-300';",
   "                button.classList.remove('hidden');",
   "                result.replaceChildren();",
