@@ -31,8 +31,8 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### Deploying to Vercel
 
-This app lives in `gitub/Hackathone/my-app` inside the repository. In Vercel, set
-the project **Root Directory** to `gitub/Hackathone/my-app`. Use these build
+This app lives in the `my-app` directory inside the repository. In Vercel, set
+the project **Root Directory** to `my-app`. Use these build
 settings:
 
 - Framework preset: Create React App
@@ -41,8 +41,9 @@ settings:
 - Install command: `npm install`
 
 The `vercel.json` rewrite sends `/dashboard` back to the React entry page so
-direct links and browser refreshes work. The dashboard markup and scripts are
-embedded in `src/components/Login/HCM lite/hcm lite.jsx`.
+direct links and browser refreshes work. The dashboard markup and scripts are stored as JavaScript in
+`src/components/Login/HCM lite/hcm lite.js`, and its custom styles are in
+`public/hcm lite.css`.
 
 ### `npm run eject`
 
